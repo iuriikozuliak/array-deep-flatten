@@ -1,0 +1,33 @@
+{
+  "name": "array-deep-flatten",
+  "version": "0.1.0",
+  "description": "Not just another one, but fast, reliable, deep and non imperative array flatten.",
+  "main": "lib/index.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "rm -rf lib/ && ./node_modules/.bin/babel -d lib/ src/",
+    "test": "babel-node ./spec/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iuriikozuliak/array-deep-flatten.git"
+  },
+  "keywords": [
+    "array",
+    "flatten",
+    "tools",
+    "functional",
+    "trampoline",
+    "deep"
+  ],
+  "author": "Iurii Kozuliak <i.kozuliak@gmail.com> (https://github.com/iuriikozuliak)",
+  "license": "MIT",
+  "homepage": "https://github.com/iuriikozuliak/array-deep-flatten#readme",
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-core": "^6.10.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "tape": "^4.6.0"
+  }
+}
